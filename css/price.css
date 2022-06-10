@@ -1,0 +1,495 @@
+.price_text {
+  margin-top: 48px;
+  text-align: left;
+}
+.price {
+  height: 20vh;
+}
+
+@media (max-width: 540px) {
+  .price {
+    height: 10vh;
+  }
+}
+
+.bg_color {
+  /* width: 100%; */
+  /* z-index: -5; */
+  background-color: #f7f9fd;
+  height: 470px;
+  border-radius: 0px 0px 0px 300px;
+}
+
+.price_bg {
+  position: absolute;
+  right: 0;
+}
+
+@media (max-width: 1100px) {
+  .price_bg {
+    width: 100%;
+  }
+}
+@media (max-width: 540px) {
+  .price_bg {
+    display: none;
+  }
+}
+.price_zone {
+  position: relative;
+}
+
+.price_bg_mobile {
+  position: absolute;
+  right: 0;
+  height: auto;
+  width: 100%;
+}
+
+@media (min-width: 541px) {
+  .price_bg_mobile {
+    display: none;
+    /* width: 375px; */
+  }
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .price {
+    justify-content: left;
+  }
+}
+
+.price_zone {
+  position: relative;
+  margin: 0 auto;
+}
+
+.price_img {
+  width: 532px;
+  height: auto;
+  position: relative;
+  right: 0;
+}
+@media (max-width: 1100px) {
+  .price_img {
+    width: 450px;
+  }
+}
+@media (max-width: 1000px) {
+  .price_img {
+    width: 400px;
+  }
+}
+
+.price_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.price_text p {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.price_text .p1_text {
+  font-size: 18px;
+  color: #56c4c5;
+  font-weight: bold;
+}
+.price_text .p2_text {
+  font-size: 20px;
+}
+
+.price_text h1 {
+  padding: 5px;
+  margin-bottom: 10px;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .price_text h1 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .price_text .p1_text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .price_text .p2_text {
+    font-size: 16px;
+  }
+}
+
+/* ------------------------------------ */
+/* 以上為了解APP功能 客戶輪廓blabla */
+
+.project_choice {
+  margin-top: 100px;
+  min-height: 70vh;
+  /* min-h  上７０vh 不想看到頁面一直上推下推 */
+
+  /* z-index: 5; */
+}
+.project_choice h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .project_choice h2 {
+    font-size: 28px;
+  }
+}
+
+.basic_standard {
+  padding: 15px 19px 15px 29px;
+}
+
+.choice_info hr {
+  background-color: #00000014;
+  height: 1px;
+  border: none;
+  margin: 0;
+}
+
+.choice_info h3 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.choice_info {
+  /* border: 1px solid blue; */
+  box-shadow: 0px 2px 10px #00000014;
+  width: 48%;
+  height: auto;
+  border-radius: 20px;
+
+  position: relative;
+}
+
+@media (max-width: 1090px) {
+  .choice_info {
+    width: 80%;
+    margin-top: 5rem;
+  }
+}
+
+.price_btn_list {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 48px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+}
+
+.price_btn {
+  /* overflow: auto; */
+  border: none;
+  color: #ffffff;
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  padding-left: 32px;
+  padding-right: 32px;
+
+  background-color: #56c4c5;
+  font-size: 18px;
+  width: 145px;
+  height: 50px;
+  border-radius: 27px;
+  font-family: "Noto Sans TC", sans-serif;
+  margin-top: 16px;
+}
+
+.choice_list {
+  display: flex;
+  justify-content: space-around;
+  /* border: 1px solid black; */
+  margin-top: 104px;
+  flex-wrap: wrap;
+}
+
+.choice_face {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 10px #00000014;
+  top: -56px;
+  left: 32px;
+
+  position: absolute;
+}
+
+.choice_face img {
+  border-radius: 50%;
+}
+
+.choice_text {
+  /* border: 1px solid blue; */
+  padding: 33px 30px 33px 30px;
+}
+
+hr {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.choice_p1 {
+  text-align: center;
+  /* font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px; */
+  min-height: 48px;
+}
+
+.choice_p2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.choice_p3 {
+  /* border: 1px solid green; */
+  font-size: 16px;
+}
+
+.chart {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  /* border: 1px solid green; */
+  margin-bottom: 32px;
+}
+
+@media (max-width: 540px) {
+  .chart {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+/* 變直 感覺比較美觀 :D */
+
+.chart_detail p {
+  margin-top: 16px;
+}
+
+.chart_detail p img {
+  margin-right: 12px;
+}
+
+@media (min-width: 768px) and (max-width: 1090px) {
+  .chart_detail {
+    /* 純紀錄 */
+    /* text-align: center; */
+    /* margin: 0 auto; */
+    /* vertical-align: middle; */
+    /* display: flex; */
+
+    margin-left: 25%;
+  }
+}
+
+.customer_amount,
+.customer_cost {
+  /* border: 1px solid red; */
+  height: 108px;
+  width: 169px;
+  background-color: #f5f5f5;
+  padding: 24px 32px 24px 32px;
+  font-size: 12px;
+
+  border-radius: 12px;
+}
+
+/* //不懂為何此處(橘色border)的span要用d-flex 
+才能將訂閱用戶數和10000位  移動置中 */
+/* 若少了這三行span也就是行內元素而已 卻沒辦法使用text-align去移動 */
+/* 甚至改成display-block 也無法用margin 0 auto */
+
+.customer_amount span {
+  /* border: 1px solid orange; */
+
+  /* ------ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* ------ */
+}
+
+/* 穎ㄇ一ㄣ老師回覆  */
+/* 使用這串可以達成上面無法更動的疑惑 */
+
+/* .customer_amount {
+    text-align: center;
+  } */
+
+/* A：因為span 本身範圍可以參考下圖，所以他已經佔滿整個藍色區塊，就無法移動到中間了，你可以試試在 .customer_amount 那邊下 text-align: center;  */
+
+.user {
+  display: flex;
+  justify-content: center;
+
+  align-items: baseline;
+}
+
+.user span {
+  color: #56c4c5;
+  font-size: 32px;
+}
+.user sub {
+  color: #56c4c5;
+  font-size: 12px;
+  display: contents;
+  margin-left: 8px;
+  font-weight: bold;
+}
+
+/* --------------------- */
+
+.cost {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.customer_cost span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cost span {
+  font-size: 32px;
+}
+.cost sub {
+  font-size: 12px;
+  display: contents;
+  margin-left: 8px;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .customer_amount,
+  .customer_cost {
+    padding: 16px 27px 16px 27px;
+  }
+}
+
+.try_btn {
+  text-align: center;
+}
+
+/* 下面的疑惑 老師解答
+A：這邊其實和上面問題蠻像的，text-align: center; 寫在 .try_btn 就可以了，那 ： .try_btn btn 就可以不用使用  margin 0 auto 和 display:block 囉
+（button 原本是 inline-block） */
+
+.try_btn .btn {
+  background-color: #56c4c5;
+  font-size: 18px;
+  width: 136px;
+  height: 50px;
+  border-radius: 27px;
+
+  /* ---原本寫margin 0 auto 置中沒效果 要加寫block--- */
+  /* margin: 0 auto; */
+  /* 不懂 該處的btn為何尚失了div block特性 還需要另外補上 包裹他的choice_text也沒有寫上flex呀...??*/
+  /* display: block; */
+}
+
+.try_btn {
+  margin-top: 46px;
+}
+@media (max-width: 768px) {
+  .try_btn {
+    margin-top: 30px;
+  }
+}
+
+/* --------------常見問題------------------ */
+
+.qa_list {
+  display: flex;
+  flex-direction: column;
+
+  /* justify-content: space-around; */
+
+  margin-top: 104px;
+
+  /* flex-wrap: wrap; */
+}
+
+.qa_info hr {
+  background-color: #00000014;
+  height: 1px;
+  border: none;
+  margin: 0;
+}
+
+.qa_info h3 {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .qa_info h3 {
+    font-size: 16px;
+  }
+}
+
+.qa_info {
+  box-shadow: 0px 2px 10px #00000014;
+  /* width: 48%; */
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 16px;
+
+  position: relative;
+}
+
+.qa_title {
+  padding: 16px 32px 16px 32px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.qa_title span {
+  display: block;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.qa_content {
+  display: none;
+
+  padding: 16px 32px 16px 32px;
+  color: #747474;
+}
+
+/* ------常見問題顏色漸變------------ */
+.color-b {
+  color: black;
+  transition: all 2s ease;
+}
+.clolr_switch {
+  color: #56c4c5;
+  transition: all 0.5s ease;
+}
+/* ----------------------------------- */

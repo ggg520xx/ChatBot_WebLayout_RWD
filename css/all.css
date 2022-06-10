@@ -1,0 +1,910 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ------------------------------------------------------------------- */
+/* reset setting */
+/* ------------------------------------------------------------------- */
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: baseline;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+sub {
+  vertical-align: sub;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* ------------------------------------------------------------------- */
+/* base setting by me */
+/* ------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------- */
+/* start */
+/* ------------------------------------------------------------------- */
+
+.bg {
+  position: absolute;
+  right: 0;
+}
+
+@media (max-width: 1100px) {
+  .bg {
+    width: 70%;
+  }
+}
+@media (max-width: 540px) {
+  .bg {
+    display: none;
+  }
+}
+
+.bg_mobile {
+  position: absolute;
+  right: 0;
+  height: auto;
+  width: 80vw;
+  z-index: -1;
+  bottom: 0;
+}
+
+@media (min-width: 541px) {
+  .bg_mobile {
+    display: none;
+    width: 334px;
+  }
+}
+
+.header {
+  padding: 20px;
+  /* border: 0.5px solid black; */
+}
+
+.menu {
+  /* border: 0.5px solid black; */
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+
+.menu img {
+  width: 200px;
+}
+
+@media (max-width: 540px) {
+  .menu img {
+    width: 110px;
+  }
+}
+
+.btn {
+  border-radius: 22px;
+  width: 128px;
+  height: 40px;
+  background-color: #ff5d50;
+
+  border: none;
+ 
+  font-weight: 900;
+
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.btn a {
+ color: #ffffff;
+  font-size: 16px;
+}
+
+@media (max-width: 540px) {
+  .btn a  {
+    font-size: 14px;
+  }
+}
+
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .banner {
+    justify-content: center;
+  }
+}
+
+.banner_zone {
+  position: relative;
+  margin: 0 auto;
+}
+
+.banner_img {
+  width: 532px;
+  height: auto;
+  position: relative;
+  right: 0;
+}
+@media (max-width: 1100px) {
+  .banner_img {
+    width: 450px;
+  }
+}
+@media (max-width: 1000px) {
+  .banner_img {
+    width: 400px;
+  }
+}
+
+.banner_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.banner_text p {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.banner_text .p1_text {
+  font-size: 18px;
+  color: #56c4c5;
+  font-weight: bold;
+}
+.banner_text .p2_text {
+  font-size: 20px;
+}
+
+.banner_text h1 {
+  padding: 5px;
+  margin-bottom: 10px;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .banner_text h1 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .banner_text .p1_text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .banner_text .p2_text {
+    font-size: 16px;
+  }
+}
+
+/* ----------------------------------------------------------- */
+/* 以上為 header + banner 區塊 */
+
+.content_media {
+  margin-top: 200px;
+}
+
+.content_media h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.media {
+  margin-top: 48px;
+  display: flex;
+  /* border: 1px solid black; */
+  /* flex-wrap: wrap; */
+  /* margin: 0 auto; */
+  justify-content: space-around;
+}
+@media (max-width: 768px) {
+  .media {
+    display: block;
+  }
+}
+
+.media div {
+  /* border: 1px solid red; */
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .media div {
+     width: 100%;
+    margin-top: 24px;
+  }
+}
+.media div img {
+  width: 90px;
+  height: auto;
+}
+.media div p {
+  margin-top: 24px;
+  text-align: center;
+}
+.media div .media_p1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.media div .media_p2 {
+  font-size: 16px;
+  color: #747474;
+}
+
+/* @media (max-width: 540px) {
+  .media div {
+    width: 100%;
+  }
+} */
+
+/* ------------------------------- */
+/* 以上為三大平台 */
+
+.content_card {
+  margin-top: 100px;
+  /* border: 1px solid red; */
+}
+
+.content_card h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+@media (max-width: 540px) {
+  .content_card h2 {
+    font-size: 28px;
+  }
+}
+
+.content_card .content_card_slogan {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.content_card_slogan {
+  font-size: 20px;
+}
+@media (max-width: 540px) {
+  .content_card_slogan {
+    font-size: 18px;
+  }
+}
+
+.card_list {
+  margin-top: 48px;
+  display: flex;
+  /* border: 1px solid black; */
+  flex-wrap: wrap;
+  /* margin: 0 auto; */
+  justify-content: space-between;
+}
+@media (max-width: 1100px) {
+  .card_list {
+    justify-content: space-around;
+  }
+}
+
+.card_list_shadow {
+  /* background-color: red; */
+  /* border: 1px solid yellow; */
+  box-shadow: 0px 2px 10px #00000014;
+  width: 22%;
+  border-radius: 20px;
+}
+
+@media (max-width: 1100px) {
+  .card_list_shadow {
+    width: 45%;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 540px) {
+  .card_list_shadow {
+    width: 100%;
+    /* margin-top: 2rem; */
+  }
+}
+
+.card_list_shadow div {
+  padding-left: 16px;
+  padding-right: 16px;
+  /* padding-top: 24px; */
+  padding-bottom: 24px;
+}
+
+.card_list p {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.card_list_p1 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #56c4c5;
+}
+.card_list_p2 {
+  font-size: 16px;
+}
+
+.card_list div img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px 20px 0px 0px;
+}
+
+/* ------------------------------- */
+/* 以上為 blabla角色都能給的CARD區塊 */
+
+.content_appinfo {
+  margin-top: 100px;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 820px) {
+  .content_appinfo {
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-top: 60px;
+  }
+}
+
+.left_side {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  justify-content: space-around;
+}
+
+@media (max-width: 820px) {
+  .left_side {
+    /* flex-wrap: wrap; */
+    width: 100%;
+    padding: 0px 100px 0px 100px;
+  }
+}
+
+@media (max-width: 730px) {
+  .left_side {
+    display: block;
+    padding: 0px;
+  }
+}
+
+.left_appinfo {
+  /* max-width: 50%; */
+  box-shadow: 0px 2px 10px #00000014;
+  width: 230px;
+  height: 280px;
+  border-radius: 20px;
+  margin-top: 28px;
+  /* border: 1px solid red; */
+
+  padding: 32px 32px 32px 32px;
+}
+
+@media (max-width: 953px) {
+  .left_appinfo {
+    width: 200px;
+  }
+}
+
+@media (min-width: 820px) and (max-width: 953px) {
+  .left_appinfo {
+    width: 195px;
+  }
+}
+
+@media (max-width: 820px) {
+  .left_appinfo {
+    width: 40%;
+    /* max-width: 50%; */
+  }
+}
+@media (max-width: 730px) {
+  .left_appinfo {
+    margin: 0 auto;
+    margin-top: 24px;
+    width: 230px;
+  }
+}
+
+.circle_forimg {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  /* border: 1px solid red; */
+  box-shadow: 0px 2px 10px #00000014;
+  margin-bottom: 24px;
+
+  /* ------------------------ */
+  /* 原本想很多方法調整箭靶圖位置 */
+  /* 沒想到寫flex就完成了 */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* position: relative; */
+}
+
+/* .circle_forimg img {
+  position: absolute;
+  margin: 0 auto;
+  display: block;
+} */
+
+/* vertical-align: middle;
+text-align: center;
+width: 50%;
+height: 50%; */
+
+/* ------------------------ */
+
+.left_appinfo p {
+  margin-bottom: 16px;
+  word-wrap: break-word;
+}
+.left_appinfo_p2 {
+  font-size: 16px;
+}
+
+.left_appinfo_p1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.left_appinfo_p2 {
+  font-size: 16px;
+}
+
+/* ------------------------ */
+/* ------------------------ */
+/* ------------------------ */
+
+.right_side {
+  width: 50%;
+  padding: 165px 60px 165px 130px;
+}
+
+@media (max-width: 1000px) {
+  .right_side {
+    padding: 165px 30px 165px 90px;
+  }
+}
+
+@media (max-width: 820px) {
+  .right_side {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media (max-width: 750px) {
+  .right_side {
+    margin-bottom: 8px;
+  }
+}
+
+.right_appinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+
+@media (max-width: 820px) {
+  .right_appinfo {
+    text-align: center;
+  }
+}
+
+.right_appinfo .btn {
+  background-color: #56c4c5;
+  font-size: 18px;
+  width: 136px;
+  height: 50px;
+  border-radius: 27px;
+}
+
+.right_appinfo h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* .right_appinfo_text {
+   border: 1px solid red;
+} */
+
+.right_appinfo_text p {
+  margin-top: 16px;
+}
+
+.right_appinfo_btn {
+  margin-top: 24px;
+}
+
+/* ------------------------------------ */
+/* 以上為了解APP功能 客戶輪廓blabla */
+
+.content_feedback {
+  margin-top: 100px;
+  /* border: 1px solid red; */
+}
+.content_feedback h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.feedback_list {
+  display: flex;
+  justify-content: space-around;
+  /* border: 1px solid black; */
+  margin-top: 104px;
+  flex-wrap: wrap;
+}
+
+.feedback_info {
+  /* border: 1px solid blue; */
+  box-shadow: 0px 2px 10px #00000014;
+  width: 352px;
+  height: auto;
+  border-radius: 20px;
+
+  position: relative;
+}
+
+@media (max-width: 1090px) {
+  .feedback_info {
+    width: 80%;
+    margin-top: 5rem;
+  }
+}
+
+.feedback_face {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 10px #00000014;
+  top: -56px;
+  left: 32px;
+
+  position: absolute;
+}
+
+.feedback_face img {
+  border-radius: 50%;
+}
+
+.feedback_text {
+  /* border: 1px solid green; */
+  padding: 48px 32px 24px 32px;
+}
+
+hr {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.feedback_p2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.feedback_p3 {
+  /* border: 1px solid green; */
+  font-size: 16px;
+}
+
+.major_star {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ----------------------------------- */
+/* 以上為好評回饋 */
+
+.footer {
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  /* border: 1px solid red; */
+}
+
+.footer_btn .btn {
+  background-color: #56c4c5;
+  font-size: 18px;
+  width: 136px;
+  height: 50px;
+  border-radius: 27px;
+
+  /* border: 1px solid red; */
+}
+
+.footer_btn {
+  margin-top: 46px;
+}
+@media (max-width: 768px) {
+  .footer_btn {
+    margin-top: 30px;
+  }
+}
+
+.footer_text {
+  position: absolute;
+
+  top: 70%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 380px) {
+  .footer_text {
+    margin-top: 30px;
+  }
+}
+
+.footer_text p {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .footer_text p {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 540px) {
+  .footer_text p {
+    font-size: 20px;
+  }
+}
+
+.footer_bg {
+  position: relative;
+}
+
+.img_none {
+  width: 100vw;
+}
+
+/* --------------------------------- */
+/* footer結束 */
+
+.copyright {
+  background-color: #f5f5f5;
+  text-align: center;
+  /* vertical-align: middle; */
+
+  /* border: 1px solid red; */
+  height: 56px;
+  /* width: 100%; */
+  padding: 16px 0px 16px 0px;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .copyright {
+    margin-top: 10px;
+  }
+}
+
+/* ------------------------------- */
+/* 沒了 */
+
+@media (max-width: 375px) {
+  .img_none {
+    display: none;
+  }
+}
+@media (min-width: 375px) {
+  .img_show {
+    display: none;
+  }
+}
+
+/* -------------向上按鈕 */
+
+.btn_up {
+  background-color: #56c4c5;
+  height: 50px;
+  width: 50px;
+  right: 2rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.btn_up p {
+  color: #ffffff;
+  font-size: 14px;
+}
